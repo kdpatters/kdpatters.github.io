@@ -15,9 +15,9 @@
   </div>
   <div class="hbar sticky" name="mainmenu" id="mainmenu">
     <div class="navbar">
-      <a class="active" href="./">Home</a>
-      <a href="./about">About</a>
-      <a href="./contact">Contact</a>
+      <a {% if page.title = 'Home' %}class='active'{% endif %} href="./">Home</a>
+      <a {% if page.title = 'About' %}class='active'{% endif %} href="./about">About</a>
+      <a {% if page.title = 'Contact' %}class='active'{% endif %} href="./contact">Contact</a>
     </div>
   </div>
   <div class="content">
